@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Verification Notification</title>
+    <style type="text/css">
+        /* Base */
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            background-color: #FAFAFA;
+            color: #222222;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+        /* Layout */
+        .email-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .email-header {
+            background-color: #e80940;
+            padding: 24px;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 24px;
+            background-color: #ffffff;
+        }
+        .email-footer {
+            background-color: #f6f6f6;
+            padding: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-wrapper">
+        <div class="email-header">
+            <h1>Report Verified - Crime Radar</h1>
+        </div>
+        <div class="email-body">
+            <p>Dear <%= name %>,</p>
+            <p>Your report regarding "<%= notice %>" has been successfully verified.</p>
+            <p>Thank you for your attention to this matter. If you have any further questions or need assistance, feel free to contact us.</p>
+        </div>
+        <div class="email-footer">
+            <p>This is an auto-generated email. Please do not reply to this email.</p>
+        </div>
+    </div>
+</body>
+</html>

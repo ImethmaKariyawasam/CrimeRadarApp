@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@types/ejs": "^3.1.5",
+    "ejs": "^3.1.10",
+    "nodemailer": "^6.9.14"
+  }
+}
